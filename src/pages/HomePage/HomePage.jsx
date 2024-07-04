@@ -1,6 +1,12 @@
 import s from './HomePage.module.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function HomePage() {
+  const navigate = useNavigate();
+  const handleProceedClick = () => {
+    navigate('/catalog');
+  };
+
   return (
     <>
       <div className={s.container}>
@@ -33,7 +39,9 @@ export default function HomePage() {
           of traveling with our camper vans. Plan your next adventure in Ukraine
           with us!
         </p>
-        <button className={s.proceedBtn}>Proceed to Catalog</button>
+        <button className={s.proceedBtn} onClick={handleProceedClick}>
+          Proceed to Catalog
+        </button>
       </div>
     </>
   );

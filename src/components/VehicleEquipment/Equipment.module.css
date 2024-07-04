@@ -1,0 +1,36 @@
+.initialTitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text);
+}
+.title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main);
+}
+.equipmentBtns {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.btns {
+  width: 360px;
+  height: 198px;
+  border: 1px solid var(--button);
+  border-radius: 10px;
+  padding: 17px 40px;
+  width: 112px;
+  height: 95px;
+  mix-blend-mode: multiply;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--main);
+}
